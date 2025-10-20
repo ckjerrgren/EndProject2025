@@ -8,7 +8,7 @@
 </head>
 <body>
 <header>
-    <h>Show your pokemons! </h>
+    <h1>Show your pokemons! </h1>
 </header>
 
 <!-- "class" är för css styling -->
@@ -19,10 +19,25 @@
         <button type = "button" id = "searchButton">Visa</button>
     </section>
 
+    <!-- "filterknappar -->
+    <section class="typeButtons">
+        <button class="typeBtn" data-type="fire">Eld</button>
+        <button class="typeBtn" data-type="water">Vatten</button>
+        <button class="typeBtn" data-type="grass">Gräs</button>
+        <button class="typeBtn" data-type="">Alla</button> <!-- tomt = visa alla -->
+    </section>
+
+
     <!-- Här kommer resultatet att visas -->
-    <section class = "results">
+    <section id="pokemonResults" class="pokemonResults">
 
     </section>
+
+
+
+
+
+
 </main>
 
 
@@ -30,6 +45,7 @@
     <p>&copy; 2025 Claudia Kjerrgren</p>
 </footer>
 
-<script src="app.js"></script>
+<script src="app.js" defer></script>
+
 </body>
 </html>
